@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Enquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Training Enquiry Form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="contact">Contact Number (Include PIN Code) *</label>
+            <input type="text" id="contact" name="contact" required pattern="^\d{10,15}$" title="Enter a valid number with PIN code.">
+
+            <label for="course">Select Course *</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option>CCNA (200-301)</option>
+                <option>Linux (RHCSA)</option>
+                <option>AWS Cloud</option>
+                <option>GCP - Google Cloud Platform</option>
+                <option>Microsoft Azure Cloud</option>
+                <option>Docker & Kubernetes</option>
+                <option>Ansible (RHCE)</option>
+                <option>DevOps Tools</option>
+                <option>Terraform</option>
+                <option>VM-Ware DataCenter Virtualization</option>
+                <option>RedHat OpenStack (CL110 & CL210)</option>
+                <option>RedHat OpenShift (DO280)</option>
+                <option>RedHat OpenShift Virtualization (DO316)</option>
+                <option>RedHat Openshift AI (AI267)</option>
+                <option>RedHat Satellite (RH403)</option>
+                <option>Python Programming</option>
+                <option>Data Science Training</option>
+                <option>Other</option>
+            </select>
+
+            <label for="reference">Where did you get our reference? *</label>
+            <select id="reference" name="reference" required>
+                <option value="" disabled selected>Select an option</option>
+                <option>Advertisement</option>
+                <option>Social Media Platforms</option>
+                <option>Website - Article/Blogs</option>
+                <option>Through a Friend</option>
+                <option>Already a student</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
