@@ -3,7 +3,7 @@
 # Variables
 DB_ROOT_PASSWORD="1234"
 DB_USER="sonu"
-DB_PASS="sonu1234"
+DB_PASS="sonu"
 DB_NAME="TrainingEnquiry"
 TABLE_NAME="Enquiries"
 GIT_REPO="https://github.com/Sonupalsingh/Enquiry_Form.git"
