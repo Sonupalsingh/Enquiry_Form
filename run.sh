@@ -12,7 +12,7 @@ WEB_ROOT="/var/www/html"
 # Update and install required packages
 echo "Updating system and installing dependencies..."
 sudo yum update -y
-sudo yum install -y httpd git mariadb-server mariadb php php-mysqlnd
+sudo yum install -y httpd git  mariadb* php php-mysqlnd
 
 # Start and enable services
 echo "Starting and enabling Apache and MariaDB services..."
