@@ -26,6 +26,7 @@ echo "Cloning Git repository..."
 sudo git clone $GIT_REPO ${WEB_ROOT}/Enquiry_Form
 sudo mv ${WEB_ROOT}/Enquiry_Form/* $WEB_ROOT/
 sudo rm -rf ${WEB_ROOT}/Enquiry_Form
+sudo rm -rf /home/ec2-user/Ecquiry_Form
 
 # Secure MariaDB installation
 echo "Securing MariaDB installation..."
