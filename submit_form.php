@@ -1,8 +1,8 @@
 <?php
 // Database connection details
 $host = "localhost";
-$username = "root";
-$password = "your_password"; // Replace with your database password
+$username = "sonu";
+$password = "sonu"; // Replace with your database password
 $database = "TrainingEnquiry";
 
 // Create connection
